@@ -1,4 +1,4 @@
-compiler=g++
+compiler=clang++
 
 headers= -I./lib/include
 

@@ -4,7 +4,7 @@
 #include <stdint.h>
 #include <cstring>
 
-#define ENIGMA_LOG_INFO
+#undef ENIGMA_LOG_INFO
 
 #include <log.h>
 
@@ -84,6 +84,6 @@ void process_input(GLFWwindow* window) {
 }
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
-	printf("[LOG]: changing size of window into %dx%d\n", width, height);
+	// printf("[LOG]: changing size of window into %dx%d\n", width, height);
 	glViewport(0, 0, width, height);
 }
